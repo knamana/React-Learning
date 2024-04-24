@@ -1,8 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// using JSX
-const jsxHeading = <h1>Namasthe React with JSX!</h1>
+// React component
+const Title = () => (
+    <h1>Namasthe React!</h1>
+);
+
+const HeadingComponent = () => (
+    <div>
+        <Title />
+        <h1>Namasthe React with Functional component!</h1>
+    </div>
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(jsxHeading);
+
+// rendering the component
+root.render(<HeadingComponent />);
