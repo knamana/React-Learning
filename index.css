@@ -2,61 +2,103 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
   
-  .header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: aqua;
+    background-color: orange;
     width: auto;
-  }
-  .left {
+    height: 100px;
+}
+.left {
     margin-left: 40px;
-  }
+}
   
-  .left img {
-    width: 50px;
+.left img {
+    width: 80px;
     margin: 10px 40px 0 10px;
     cursor: pointer;
-  }
-  img:hover {
+}
+img:hover {
     transform: scale(1.1);
-  }
-  .center .input {
+}
+.center .input {
     width: 400px;
     border-radius: 10px;
     padding: 10px;
-  }
-  .input:focus {
+}
+.input:focus {
     border: 3px solid crimson;
-  }
+}
   
-  .center button {
+.center button {
     border-radius: 10px;
     padding: 10px;
     cursor: pointer;
-  }
-  button:hover {
+}
+button:hover {
     background-color: green;
     color: white;
-  }
-  .right {
-    margin-right: 40px;
-  }
-  .right img {
+}
+
+.nav-items > ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-items > ul > li {
+    padding: 20px;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.right img {
     width: 50px;
     margin: 10px 20px 0 0;
     cursor: pointer;
-  }
+}
+
+.body {
+    padding: 10px;
+}
+
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+.res-card {
+    margin: 10px;
+    padding: 5px;
+    background-color: #fed8b1;
+    /* background-color: #ffd677; */
+    width: 200px;
+    height: 300px;
+}
+
+.res-card:hover {
+    cursor: pointer;
+    border: 1px solid black;
+}
   
-  @media screen and (max-width: 770px) {
+.res-card > img {
+    width: 100%;
+}
+
+.res-card h1, .res-card h3 {
+    /* Add margin to create space below each heading */
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 770px) {
     .center .input {
       width: 200px;
       transition: all 500ms ease;
     }
-  }
-  @media screen and (max-width: 500px) {
+}
+@media screen and (max-width: 500px) {
     .left {
       margin-left: 5px;
     }
@@ -73,11 +115,11 @@
       width: 100px;
       transition: all 500ms ease;
     }
-  }
+}
   
-  @media screen and (max-width: 340px) {
+@media screen and (max-width: 340px) {
     .center .input {
       width: 70px;
       transition: all 500ms ease;
     }
-  }
+}
