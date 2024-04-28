@@ -1019,7 +1019,7 @@ const Body = () => {
             <div className="res-container">
                 {
                     resList.map(item => (
-                        <RestaurantCard resData={item} />
+                        <RestaurantCard key={item.info.id} resData={item} />
                     ))
                 }
             </div>
